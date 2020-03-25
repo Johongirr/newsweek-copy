@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=B612&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* css variables */
+:root {
+    --primary-color: #aaa;
+    --secondary-color:#555;
+    --tertiary-color:#000;
+    --color-white: #fff;
+    --color-pink:#f42;
+    --color-light-black: #131313;
+}
+/* general styles */
+/* margin */
+.mt-4 {
+    margin-top: 4rem;
+}
+.mb-2 {
+    margin-bottom: 2rem;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.container {
+    width: 95%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.row {
+    display: grid;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+
+/* header nav */
+#header .nav-top,.nav-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+#header .nav-top {
+    padding: 1rem;
+    background-color: var(--color-light-black);
+}
+#header .nav-left,.nav-right {
+    display: flex;
+}
+#header .nav a {
+    color: var(--primary-color);
+    padding-right: 1.2rem;
+}
+#header .nav-top a:hover {
+   color: var(--color-white);
+}
+#header .nav-bottom a:hover {
+    color: var(--tertiary-color);
+}
+#header .nav-bottom div {
+    padding: 1rem;
+}
+#header .nav-bottom .nav-right {
+    border-left: 1px solid #000;
+}
+#header a.nav__banner{
+    background-color: yellow;
+    display: block;
+    color: var(--tertiary-color);
+    padding: 0.5rem 1rem;
+}
+/* main header */
+.main__header {
+    margin: 0.3rem;
+}
+.main__header h1 {
+    font-family: B612, monospace, sans-serif;
+}
+.main__header .row{
+    
+    grid-template-areas: 
+    "main main side-1"
+    "main main side-2";
+    grid-gap: 5px;
+}
+.main__header .article--1 {
+    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/Untitled-design37-796x417.png) center no-repeat;
+    background-size: cover;
+    grid-area: main;
+}
+.main__header .img-container {
+    padding: 1rem 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+    color: var(--primary-color);
+}
+.main__header .logo {
+    width: 30vw;
+}
+.main__header .main-title-container {
+    margin-top: 8rem;
+    padding: 2rem 1.5rem;
+}
+.main__header .main-title {
+    font-size: 3rem;
+    color: var(--color-white);
+    font-weight: bold;
+}
+.main__header .main-title-container p {
+    color: var(--primary-color);
+}
+.main__header .main-title-container a {
+    color: var(--primary-color);
+}
+.main__header .main-title-container a:hover {
+    color: var(--color-white);
+}
+.article--2,
+.article--3 {
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    color: var(--color-white);
+}
+
+
+/* article sidebar top   */
+.main__header .article--2 {
+    background: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/03/P30-4-of-5-796x417.jpg") center no-repeat;
+    background-size: cover;
+    grid-area: side-1;
+}
+ 
+.main__header .article--2 .main-title {
+    font-size: 1.7rem;
+}
+.main__header  a {
+    color: var(--primary-color);
+}
+.main__header   p {
+    color: var(--primary-color);
+}
+/* article sidebar bottom */
+.main__header .article--3 {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/baldbezos-796x417.jpg");
+    grid-area: side-2;
+}
+.main__header .main-title-container-3 .main-title {
+    font-size: 1.7rem;
+}
+
+
+/* latest news */
+
+#latest-news .row {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   
+    grid-gap: 20px;
+}
+ 
+#latest-news .news-link {
+    color: var(--color-pink);
+    font-size: 2rem;
+    font-weight: bold;
+}
+#latest-news a {
+    margin-top: 0.7rem;
+    display: block;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--tertiary-color);
+}
+#latest-news p {
+    padding-top: 0.5rem;
+    color: var(--primary-color);
+}
+#latest-news p a {
+    display: inline-block;
+    font-size: 1rem;
+    padding-right: 0.7rem;
+    color: var(--secondary-color);
+}
+#latest-news p a:hover {
+    color: var(--color-light-black);
+}
+#latest-news a:hover {
+    color: var(--color-pink);
+}
+#latest-news .latest-news-img {
+    background: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/03/YouTube-Dark-516x270.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 130px;
+    
+}
+ 
+/* fundings */
+#fundings {
+    margin-top: 9rem;
+}
+#fundings ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#fundings .links-right {
+    display: flex;
+}
+ 
+#fundings .links-right a {
+    border-right: 1px solid var(--color-pink);
+    padding: 0 0.5rem;
+    font-weight: 600;
+}
+#fundings .links-right a.last {
+    border-right: 0;
+}
+#fundings .links-left a {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+#fundings a {
+    margin-bottom: 0.8rem;
+    color: var(--color-pink);
+
+}
+#fundings .row {
+     
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 20px;
+}
+#fundings article {
+    background-color: darkgreen;
+}
+/* articles */
+#articles .row {
+    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+}
+#articles article {
+    background-color: darkred;
+}
+
+/* deals */
+#deals .row {
+    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+#deals article {
+    background-color: darkviolet;
+}
+/* footer */
+#footer {
+    margin-top: 5rem;
+}
+#footer .footer-container-top {
+    background-color: deeppink;
+}
+#footer .footer-container-bottom {
+    background-color: indigo;
+}
+
+
+/* media queries */
+@media (max-width: 770px){
+    .main__header .row {
+        grid-template-areas: 
+    "main main main"
+    "side-1 side-1 side-1"
+    "side-2 side-2 side-2";
+    } 
+    #latest-news .row {
+        grid-template-columns: 1fr
+    }
+    #latest-news article {
+        display: flex;
+    }
+     
+    #latest-news .latest-news-img {
+        width: 90px;
+        height: 60px;
+        margin-right: 1rem;
+    }
+    #latest-news a {
+        font-size: 1rem;
+    }
+    #fundings .row{
+        grid-template-columns: 1fr;
+    }
+    #deals .row {
+        grid-template-columns: 1fr;
+    }
+}
