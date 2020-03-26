@@ -116,6 +116,7 @@ a {
     background-size: cover;
     grid-area: main;
 }
+ 
 .main__header .img-container {
     padding: 1rem 1rem 0 1rem;
     display: flex;
@@ -137,6 +138,7 @@ a {
 }
 .main__header .main-title-container p {
     color: var(--primary-color);
+    margin: 0;
 }
 .main__header .main-title-container a {
     color: var(--primary-color);
@@ -163,6 +165,9 @@ a {
 .main__header .article--2 .main-title {
     font-size: 1.7rem;
 }
+.main__header .article--2 p {
+    margin: 0;
+}
 .main__header  a {
     color: var(--primary-color);
 }
@@ -176,6 +181,9 @@ a {
 }
 .main__header .main-title-container-3 .main-title {
     font-size: 1.7rem;
+}
+.main__header .main-title-container-3 p {
+    margin: 0;
 }
 
 
