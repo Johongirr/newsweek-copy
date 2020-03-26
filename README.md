@@ -19,7 +19,7 @@ Github [Johongirr](https://github.com/Johongirr)
 
 
 ### Show your support
-:feet:
+If u liked project give a :star:
 
 
 
