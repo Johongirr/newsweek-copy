@@ -10,15 +10,16 @@ is part of TOP's project
 
 
 ### Live Demo
+[live](https://johongirr.github.io/newsweek-copy/)
 
-
-### Authors
-
+### Author
 #### Johongir
+Github [Johongirr](https://github.com/Johongirr)
+
 
 
 ### Show your support
-
+If u liked project give a :star:
 
 
 
