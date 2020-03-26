@@ -10,7 +10,7 @@ is part of TOP's project
 
 
 ### Live Demo
-
+[live](https://johongirr.github.io/newsweek-copy/)
 
 ### Author
 #### Johongir
