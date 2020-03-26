@@ -12,13 +12,14 @@ is part of TOP's project
 ### Live Demo
 
 
-### Authors
-
+### Author
 #### Johongir
+Github [Johongirr](https://github.com/Johongirr)
+
 
 
 ### Show your support
-
+:feet:
 
 
 
